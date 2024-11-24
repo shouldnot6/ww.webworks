@@ -36,8 +36,8 @@ const data = {
            `时区: ${this.timeZoneOffset}`;
 
     // 如果分钟数为50，输出“还差十秒一分钟”
-    if (this.seconds === 50) {
-      timeString += "\n还差十秒一分钟！";
+    if (this.minutes === 20 || this.minutes == 50) {
+      timeString += "\n站起来活动一下吧！";
     }
 
     return timeString;
@@ -53,4 +53,4 @@ function updateClock() {
 // 初次加载时更新一次时钟
 updateClock();
 // 每毫秒更新时钟
-setInterval(updateClock, 1); // 以毫秒为单位更新
+setInterval(updateClock, 1000); // 以毫秒为单位更新
