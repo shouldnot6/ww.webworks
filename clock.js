@@ -52,7 +52,6 @@ function updateClock() {
   data.updateTime(); // 更新时间
   document.getElementById('clock').textContent = data.formatTime(); // 更新时钟显示
 }
-
 // 初次加载时更新一次时钟
 updateClock();
 // 每毫秒更新时钟
