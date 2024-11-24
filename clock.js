@@ -42,7 +42,6 @@ const data = {
     if (this.minutes === 20 || this.minutes == 50) {
       timeString += "\n站起来活动一下吧！";
     }
-
     return timeString;
   }
 };
@@ -52,7 +51,9 @@ function updateClock() {
   data.updateTime(); // 更新时间
   document.getElementById('clock').textContent = data.formatTime(); // 更新时钟显示
 }
+
 // 初次加载时更新一次时钟
 updateClock();
-// 每毫秒更新时钟
+
+// 每秒更新时钟
 setInterval(updateClock, 1000); // 以毫秒为单位更新

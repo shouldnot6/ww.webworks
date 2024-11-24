@@ -11,7 +11,6 @@ const mouseData = {
     return `鼠标按下时的坐标: (${this.mouseX}, ${this.mouseY})`;
   }
 };
-
 // 鼠标按下时更新坐标并显示
 document.addEventListener('mousedown', function(event) {
   mouseData.updateMousePosition(event);  // 更新鼠标坐标
